@@ -7,7 +7,7 @@ Excelシートに入力された値をVBAで取得し，BLASやLAPACKで記述�
 
 ## 動作原理
 
-```mermaid
+``mermaid
 sequenceDiagram
 
 Excel VBA->>lapack.dll: ma, mb, mc, va, vb, vc 
@@ -24,7 +24,7 @@ lapack.exe->>lapack.dll: lapack_output
 
 lapack.dll->>Excel VBA: ma, mb, mc, va, vb, vc 
 
-```
+``
 ma: 行列A, mb:行列B,  mc:行列C,  va:ベクトルa,  vb:ベクトルb,  vc:ベクトルc  
 lapack_input: lapack.exeプログラムへの入力バイナリデータ  
 lapack_output: lapack.exeプログラムから出力バイナリデータ（lapack.dllへの入力バイナリデータ）
